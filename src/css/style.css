@@ -1,5 +1,6 @@
 body {
-	background-color: black;
+	background-image: url('../img/background_intro.png');
+	width: 100%; 
 	color:white;
 }
 
@@ -13,24 +14,23 @@ body {
 
 .title{
 	position: absolute;
-	top : 30%;
+	top : 40%;
 	left : 50%;
-	margin-top:-125px;
-	margin-left:-83px;
+	margin-top:-225px;
+	margin-left:-151px;
 }
 
 .title h2{
 	font-family: 'Open Sans';
 	font-weight: 300;
-	font-size: 0.35em;
+	font-size: 0.63em;
 	font-weight: lighter;
-	margin-top: -10px;
+	margin-top: -7px;
 }
 
 .title h3{
 	font-family: 'Open Sans';
-	font-weight: lighter;
-	font-size: 0.95em;
+	font-size: 1.7em;
 	margin-top: -7px;
 	margin-left : 12px;
 }
@@ -39,25 +39,60 @@ body {
 	position:absolute;
 	height:400px;
 	width:600px;
-	top:70%;
+	top:20%;
 	left : 50%;
 	line-height:200px;
 	margin-top:-200px;
 	margin-left:-300px;
-	font-family: 'Maven pro';
-	font-weight: 400;
-	font-size: 1.5em;
+	font-family: 'Abel';
+	font-weight: lighter;
+	font-size: 1.3em;
 }
-.button{
-	position:absolute;
-	height:200px;
-	width:460px;
-	top:75%;
-	left:50%;
-	line-height:200px;
-	margin-top:-100px;
-	margin-left:-230px;
-	font-family: 'Maven pro';
+
+.souligne{
+	position: absolute;
+	left : 50%;
+	top : 15%;
+	width: 200px;
+	margin-left: -100px;
+	height: 1px;
+	background-color : #FFF;
+
+}
+
+.button {
+	position: absolute;
+	top: 85%;
+	margin-left: -115px;
+	text-decoration: none;
 	font-weight: 400;
-	font-size: 0.8em;
+	font-size: 18px;
+	font-family: 'Abel', helvetica, sans-serif;
+	padding-left: 29px;
+	padding-right: 29px;
+	padding-top: 18px;
+	padding-bottom: 18px;
+	border: 2px solid #E4E4E4;
+	border-radius: 3px;
+	color: #fff;
+	background-color: transparent;
+	border-color: #fff;
+	border-width: 1px;
+	text-transform: uppercase;
+	letter-spacing: 0.08em;
+	display: inline-block;
+}
+
+.button:hover {
+	background-color: rgba(255, 255, 255, 1);
+	color: rgb(61, 61, 61);
+}
+
+a:hover {
+	color: #ffd737;
+	text-decoration: none;
+	transition: 0.5s;
+	-moz-transition: 0.5s;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s;
 }

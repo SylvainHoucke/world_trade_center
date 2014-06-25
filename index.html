@@ -8,17 +8,20 @@
 	<link rel="stylesheet" href="src/css/style.css">
 	<link href='http://fonts.googleapis.com/css?family=Candal|Open+Sans:400,300,700,600' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Maven+Pro:400,500,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
 </head>
 	<body>
 		<section class="intro">
 			<div class="title">
-				<img style="height:auto; width:auto; max-width : 250px; max-height:250px;" src="src/img/title.png">
+				<img style="height:auto;width:auto;max-width:450px;max-height:450px;" src="src/img/title.png">
 				<h2>SEPTEMBER</h2>
 				<h3>2001</h3>
 			</div>
 			<div class="time"></div>
-			<div class="button"><h3>ENTER</h3></div>
-		</section>
+			<div class="souligne"></div>
+			<a class="button" href="#">Start Experience</a>	
+			<div id='audio'></div>
+ 		</section>
 
 		<section class="home">
 			<h1>Ceci est le site web</h1>
@@ -26,5 +29,13 @@
 
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 		<script src="src/js/timer.js"></script>
+		<script src="src/js/plane.js"></script>
+		<script type='text/javascript'>
+		    $(document).ready(function (){
+		        $("#audio").stop("true").delay('4500').queue(function() { 
+		            $(this).html('<audio autoplay="autoplay"><source src="src/songs/crash.mp3" type="audio/mp3" /></audio>');
+		        });
+		    });
+		</script>
 	</body>
 </html>
